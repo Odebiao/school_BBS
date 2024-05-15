@@ -1,0 +1,30 @@
+SECRET_KEY = 'hadnsjdbqmslmdasofs'
+
+# 数据库的配置信息
+HOSTNAME = '127.0.0.1'
+POST = 3306
+USERNAME = 'root'
+PASSWORD = 'root'
+DATABASE = 'new'
+SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOSTNAME}:{POST}/{DATABASE}?charset=utf8mb4'
+
+
+# qq邮箱配置
+
+MAIL_SERVER = "smtp.qq.com"
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_DEBUG = True
+MAIL_USERNAME = "485913317@qq.com"
+MAIL_PASSWORD = "yyfgnavwbavscbea"
+MAIL_DEFAULT_SENDER = "485913317@qq.com"
+
+# MAIL_SERVER = "smtp.163.com"
+# MAIL_PORT = 25
+# MAIL_USE_TLS = False
+# MAIL_USE_SSL = True
+# MAIL_DEBUG = True
+# MAIL_USERNAME = "lzh48599@163.com"
+# MAIL_PASSWORD = "EWGIEVOCTOKREUIY"
+# MAIL_DEFAULT_SENDER = "lzh48599@163.com"
